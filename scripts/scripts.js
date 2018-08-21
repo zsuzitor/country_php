@@ -1,3 +1,16 @@
+;;;
+
+
+$(document).ready(function() {
+
+//return;
+var div=document.getElementById('div_submite_new_country_id');
+div.innerHTML="";
+var new_div=document.getElementById('div_but_submite_new_country_id');
+new_div.innerHTML="<button onclick='add_new_country()'>Добавить</button>";
+
+});
+
 
 
 function validation_form_new_country(){
@@ -52,7 +65,7 @@ function add_new_country(){
 		
     };
     $.ajax({
-        url: "/Add_new_county.php",
+        url: "/Add_new_country.php",
         data: dt,
         success: 
 		function(result){
@@ -81,3 +94,6 @@ function add_new_country(){
 	
 	
 }
+
+
+;;;

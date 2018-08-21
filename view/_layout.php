@@ -9,9 +9,10 @@ function LayoutRenderStart($title){
 
 <link href='/content/site.css' rel='stylesheet'>
 
-<script src='/scripts/scripts.js'></script>
 
 <script src='scripts/jquery-3.3.1.js'></script>
+
+<script src='/scripts/scripts.js'></script>
 </head>
 <body>
 <div class='main_header'>

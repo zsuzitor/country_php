@@ -59,9 +59,7 @@ class Country{
 				return null;
 
 	
-	
-	
-		if(preg_match("/^(\p{L}){1}(\p{L}|\p{Zs}){0,98}/i", $array["name"]))
+		if(preg_match("/^(\p{L}){1}(\p{L}|\p{Zs}){0,98}/i", $array["name"])&&(strlen($array["name"]<99)))
 			$res->name=$array["name"];
 		else 
 			return null;
