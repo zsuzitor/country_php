@@ -1,6 +1,8 @@
 
 name DB - bd_inter_v
-using in files(mysqli_connect): index.php,add_new_country.php
+using in files(mysqli_connect): 
+model/database.php
+//old commit---index.php,add_new_country.php
 
 table:
 
