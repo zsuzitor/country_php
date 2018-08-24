@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 //отрисовывает форму для добавления новой страны
 function AddNewCountryFormRender(){
@@ -39,4 +39,3 @@ function AddNewCountryFormRender(){
 <?php	
 }
 
-?>

@@ -7,17 +7,17 @@ require_once("/model/database.php");
 
 
 function index_action(){
-	$connect=connect_countries_db();
+	$connect=DbСountries::Connect();
 	if(!isset($connect)){
 		exit("Не удалось подключиться к базе данных");
 	}
 
 //получаем данные из бд и отправляем в представление
 	$sql_code_string="SELECT * FROM countries";
-	$result=do_query_db($connect,$sql_code_string);
+	$result=$connect->Query($sql_code_string);
  
-	$data=mysqli_fetch_all($result,1);
-	close_db($connect);
+	$data=&$connect->FetchAll($result);
+	$connect->Close();
 	$array_obj=array();
 
 //формируем объекты
@@ -31,4 +31,3 @@ function index_action(){
 	
 }
 
-?>

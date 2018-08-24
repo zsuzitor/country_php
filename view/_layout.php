@@ -1,5 +1,4 @@
-
-<?php
+﻿<?php
 function LayoutRenderStart($title){
 	echo "<html lang='ru'>
 <head>
@@ -26,4 +25,3 @@ function LayoutRenderStart($title){
 function LayoutRenderEnd(){
 	echo "<div class='main_footer'></div></body></html>";
 }
-?>

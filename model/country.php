@@ -1,6 +1,4 @@
-
-
-<?php
+﻿<?php
 
 
 class Country{
@@ -92,5 +90,5 @@ class Country{
 	
 }
 
-?>
+
 

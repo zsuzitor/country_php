@@ -1,8 +1,7 @@
-
-<?php
+﻿<?php
 
 //исправляет массив с строками
-function ValidationInputArray(&$array,&$db){
+function ValidationInputArray(&$array,$db){
 	
 	foreach ($array as &$value) {
 		ValidationInputString($value,$db);
@@ -14,9 +13,9 @@ function ValidationInputArray(&$array,&$db){
 //исправляет строку
 function ValidationInputString(&$str,$db){
 	if(!is_null($str))
-		$str=htmlentities(mysqli_real_escape_string($db, $str), ENT_QUOTES, 'UTF-8');
+		$str=htmlentities($db->ValidateString($str), ENT_QUOTES, 'UTF-8');
 }
 
-?>
+
 
 

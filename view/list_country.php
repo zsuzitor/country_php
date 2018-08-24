@@ -1,7 +1,4 @@
-
-
-
-<?php
+﻿<?php
 
 
 require_once("/view/_layout.php");
@@ -24,9 +21,5 @@ function ListCountryRender(&$array){
 	
 	LayoutRenderEnd();
 }
-?>
-
-
-
 
 

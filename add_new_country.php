@@ -8,4 +8,3 @@ add_new_country();
 
 
 
-?>

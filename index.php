@@ -6,4 +6,3 @@ index_action();
 
 
 
-?>

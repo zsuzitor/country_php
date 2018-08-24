@@ -1,5 +1,4 @@
-
-<?php
+﻿<?php
 
 //отрисовывает 1 страну в списке стран
 function One_country_for_list_view_Render(&$obj){
@@ -38,4 +37,3 @@ function One_country_for_list_view_Render(&$obj){
 <?php	
 }
 
-?>
