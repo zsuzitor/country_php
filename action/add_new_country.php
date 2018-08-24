@@ -51,17 +51,18 @@ require_once("/model/database.php");
 
 
 	$obj->id=$connect->GetInsertId();
-	$connect->Close();
+	
  
 	if($not_js_post===1){
 		index_action();
+		
 		//$host  = $_SERVER['HTTP_HOST'];
 		//header("Location: http://$host/index.php");
 		return;
 	}
 	
 	One_country_for_list_view_Render($obj);
- 
+	$connect->Close();
 	 
  }
  
